@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my_new_notary": {
+    "my-new-notary": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/my_new_notary",
+            "outputPath": "dist/my-new-notary",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my_new_notary:build:production"
+              "buildTarget": "my-new-notary:build:production"
             },
             "development": {
-              "buildTarget": "my_new_notary:build:development"
+              "buildTarget": "my-new-notary:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "my_new_notary:build"
+            "buildTarget": "my-new-notary:build"
           }
         },
         "test": {
